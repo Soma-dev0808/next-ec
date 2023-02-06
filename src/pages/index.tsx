@@ -1,9 +1,17 @@
 import { Inter } from '@next/font/google'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const router = useRouter()
+
+  useEffect(() => {
+    router.push('/products')
+  }, [router])
+
   return (
     <>
       <Head>
@@ -21,7 +29,6 @@ export default function Home() {
           href='/favicon.ico'
         />
       </Head>
-      <main>Hello</main>
     </>
   )
 }
