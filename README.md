@@ -6,6 +6,7 @@
  - jotai (State management)
  - Material UI (UI tool)
  - Vercel (Deployment)
+ - https://fakestoreapi.com/
 
 ## Getting Started
 
